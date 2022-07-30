@@ -17,7 +17,6 @@ db.drop_all()
 db.create_all()
 
 # Заполняем таблицы в базе
-# with db.session.begin():
 user_data = json_tools.load(app.config.get("USERS_DATA"))
 orders_data = json_tools.load(app.config.get("ORDERS_DATA"))
 offers_data = json_tools.load(app.config.get("OFFERS_DATA"))
